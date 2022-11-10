@@ -1,0 +1,54 @@
+-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+-- Date        : Mon Oct 31 17:47:10 2022
+-- Host        : DESKTOP-MUNN8T1 running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub
+--               D:/wx_prj/hdmi_movie/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_axi_reg_0_0/mbs_bd_axi_reg_0_0_stub.vhdl
+-- Design      : mbs_bd_axi_reg_0_0
+-- Purpose     : Stub declaration of top-level module interface
+-- Device      : xc7a35tfgg484-2
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity mbs_bd_axi_reg_0_0 is
+  Port ( 
+    speed_valid : in STD_LOGIC;
+    speed_value : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    pic_mode_valid : out STD_LOGIC;
+    pic_mode : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC;
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC
+  );
+
+end mbs_bd_axi_reg_0_0;
+
+architecture stub of mbs_bd_axi_reg_0_0 is
+attribute syn_black_box : boolean;
+attribute black_box_pad_pin : string;
+attribute syn_black_box of stub : architecture is true;
+attribute black_box_pad_pin of stub : architecture is "speed_valid,speed_value[31:0],pic_mode_valid,pic_mode[31:0],s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[31:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[31:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready";
+attribute X_CORE_INFO : string;
+attribute X_CORE_INFO of stub : architecture is "axi_reg_v1_0,Vivado 2019.2";
+begin
+end;

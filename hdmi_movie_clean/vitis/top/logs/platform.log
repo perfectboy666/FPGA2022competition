@@ -1,0 +1,1289 @@
+TRACE::2022-10-29.18:38:31::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:31::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:31::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened new HwDB with name top_0
+TRACE::2022-10-29.18:38:33::SCWWriter::formatted JSON is {
+	"platformName":	"top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2022-10-29.18:38:33::SCWWriter::formatted JSON is {
+	"platformName":	"top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"top",
+	"systems":	[{
+			"systemName":	"top",
+			"systemDesc":	"top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"top"
+		}]
+}
+TRACE::2022-10-29.18:38:33::SCWPlatform::Boot application domains not present, creating them
+TRACE::2022-10-29.18:38:33::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2022-10-29.18:38:33::SCWWriter::formatted JSON is {
+	"platformName":	"top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"top",
+	"systems":	[{
+			"systemName":	"top",
+			"systemDesc":	"top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"top"
+		}]
+}
+TRACE::2022-10-29.18:38:33::SCWWriter::formatted JSON is {
+	"platformName":	"top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"top",
+	"systems":	[{
+			"systemName":	"top",
+			"systemDesc":	"top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"top"
+		}]
+}
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWDomain::checking for install qemu data   : 
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2022-10-29.18:38:33::SCWMssOS::No sw design opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::mss does not exists at E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::Creating sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::Adding the swdes entry, created swdb E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss with des name E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::updating the scw layer changes to swdes at   E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::Writing mss at E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::Completed writing the mss file at E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp
+TRACE::2022-10-29.18:38:33::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2022-10-29.18:38:33::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWWriter::formatted JSON is {
+	"platformName":	"top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"top",
+	"systems":	[{
+			"systemName":	"top",
+			"systemDesc":	"top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"top",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::Completed writing the mss file at E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp
+TRACE::2022-10-29.18:38:33::SCWMssOS::Forcing BSP Sources regeneration.
+LOG::2022-10-29.18:38:33::SCWPlatform::Started generating the artifacts platform top
+TRACE::2022-10-29.18:38:33::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-10-29.18:38:33::SCWPlatform::Started generating the artifacts for system configuration top
+LOG::2022-10-29.18:38:33::SCWSystem::Checking the domain standalone_domain
+LOG::2022-10-29.18:38:33::SCWSystem::Not a boot domain 
+LOG::2022-10-29.18:38:33::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-10-29.18:38:33::SCWDomain::Generating domain artifcats
+TRACE::2022-10-29.18:38:33::SCWMssOS::Generating standalone artifcats
+TRACE::2022-10-29.18:38:33::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss||
+
+KEYINFO::2022-10-29.18:38:33::SCWMssOS::Could not open the swdb for E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+KEYINFO::2022-10-29.18:38:33::SCWMssOS::Could not open the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Cleared the swdb table entry
+TRACE::2022-10-29.18:38:33::SCWMssOS::No sw design opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::mss exists loading the mss file  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::Opened the sw design from mss  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::Adding the swdes entry E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2022-10-29.18:38:33::SCWMssOS::updating the scw layer about changes
+TRACE::2022-10-29.18:38:33::SCWMssOS::Opened the sw design.  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::Completed writing the mss file at E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp
+TRACE::2022-10-29.18:38:33::SCWMssOS::Mss edits present, copying mssfile into export location E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-10-29.18:38:33::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-10-29.18:38:33::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2022-10-29.18:38:33::SCWMssOS::skipping the bsp build ... 
+TRACE::2022-10-29.18:38:33::SCWMssOS::Copying to export directory.
+TRACE::2022-10-29.18:38:33::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2022-10-29.18:38:33::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2022-10-29.18:38:33::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2022-10-29.18:38:33::SCWSystem::Completed Processing the sysconfig top
+LOG::2022-10-29.18:38:33::SCWPlatform::Completed generating the artifacts for system configuration top
+TRACE::2022-10-29.18:38:33::SCWPlatform::Started preparing the platform 
+TRACE::2022-10-29.18:38:33::SCWSystem::Writing the bif file for system config top
+TRACE::2022-10-29.18:38:33::SCWSystem::dir created 
+TRACE::2022-10-29.18:38:33::SCWSystem::Writing the bif 
+TRACE::2022-10-29.18:38:33::SCWPlatform::Started writing the spfm file 
+TRACE::2022-10-29.18:38:33::SCWPlatform::Started writing the xpfm file 
+TRACE::2022-10-29.18:38:33::SCWPlatform::Completed generating the platform
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWWriter::formatted JSON is {
+	"platformName":	"top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"top",
+	"systems":	[{
+			"systemName":	"top",
+			"systemDesc":	"top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"top",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"9d37e20e7a2278a29672a050eded6aed",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2022-10-29.18:38:33::SCWPlatform::updated the xpfm file.
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWWriter::formatted JSON is {
+	"platformName":	"top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"top",
+	"systems":	[{
+			"systemName":	"top",
+			"systemDesc":	"top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"top",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"9d37e20e7a2278a29672a050eded6aed",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWWriter::formatted JSON is {
+	"platformName":	"top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"top",
+	"systems":	[{
+			"systemName":	"top",
+			"systemDesc":	"top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"top",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"9d37e20e7a2278a29672a050eded6aed",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2022-10-29.18:38:33::SCWPlatform::Started generating the artifacts platform top
+TRACE::2022-10-29.18:38:33::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-10-29.18:38:33::SCWPlatform::Started generating the artifacts for system configuration top
+LOG::2022-10-29.18:38:33::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-10-29.18:38:33::SCWDomain::Generating domain artifcats
+TRACE::2022-10-29.18:38:33::SCWMssOS::Generating standalone artifcats
+TRACE::2022-10-29.18:38:33::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::Completed writing the mss file at E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp
+TRACE::2022-10-29.18:38:33::SCWMssOS::Mss edits present, copying mssfile into export location E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-10-29.18:38:33::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-10-29.18:38:33::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2022-10-29.18:38:33::SCWMssOS::skipping the bsp build ... 
+TRACE::2022-10-29.18:38:33::SCWMssOS::Copying to export directory.
+TRACE::2022-10-29.18:38:33::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2022-10-29.18:38:33::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2022-10-29.18:38:33::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2022-10-29.18:38:33::SCWSystem::Completed Processing the sysconfig top
+LOG::2022-10-29.18:38:33::SCWPlatform::Completed generating the artifacts for system configuration top
+TRACE::2022-10-29.18:38:33::SCWPlatform::Started preparing the platform 
+TRACE::2022-10-29.18:38:33::SCWSystem::Writing the bif file for system config top
+TRACE::2022-10-29.18:38:33::SCWSystem::dir created 
+TRACE::2022-10-29.18:38:33::SCWSystem::Writing the bif 
+TRACE::2022-10-29.18:38:33::SCWPlatform::Started writing the spfm file 
+TRACE::2022-10-29.18:38:33::SCWPlatform::Started writing the xpfm file 
+TRACE::2022-10-29.18:38:33::SCWPlatform::Completed generating the platform
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:33::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:33::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:33::SCWWriter::formatted JSON is {
+	"platformName":	"top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"top",
+	"systems":	[{
+			"systemName":	"top",
+			"systemDesc":	"top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"top",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"9d37e20e7a2278a29672a050eded6aed",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2022-10-29.18:38:33::SCWPlatform::updated the xpfm file.
+LOG::2022-10-29.18:38:59::SCWPlatform::Started generating the artifacts platform top
+TRACE::2022-10-29.18:38:59::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-10-29.18:38:59::SCWPlatform::Started generating the artifacts for system configuration top
+LOG::2022-10-29.18:38:59::SCWSystem::Checking the domain standalone_domain
+LOG::2022-10-29.18:38:59::SCWSystem::Not a boot domain 
+LOG::2022-10-29.18:38:59::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-10-29.18:38:59::SCWDomain::Generating domain artifcats
+TRACE::2022-10-29.18:38:59::SCWMssOS::Generating standalone artifcats
+TRACE::2022-10-29.18:38:59::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-10-29.18:38:59::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:59::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:59::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:59::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:38:59::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:38:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:38:59::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:38:59::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:38:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:38:59::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:59::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:38:59::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:59::SCWMssOS::Completed writing the mss file at E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp
+TRACE::2022-10-29.18:38:59::SCWMssOS::Mss edits present, copying mssfile into export location E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:38:59::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-10-29.18:38:59::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-10-29.18:38:59::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2022-10-29.18:38:59::SCWMssOS::doing bsp build ... 
+TRACE::2022-10-29.18:38:59::SCWMssOS::System Command Ran  E: & cd  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp & make 
+TRACE::2022-10-29.18:38:59::SCWMssOS::"Running Make include in microblaze_0/libsrc/axi_reg_v1_0/src"
+
+TRACE::2022-10-29.18:38:59::SCWMssOS::make -C microblaze_0/libsrc/axi_reg_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-10-29.18:38:59::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-con
+TRACE::2022-10-29.18:38:59::SCWMssOS::vert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-10-29.18:38:59::SCWMssOS::l -Wextra"
+
+TRACE::2022-10-29.18:38:59::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2022-10-29.18:38:59::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-10-29.18:38:59::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-conver
+TRACE::2022-10-29.18:38:59::SCWMssOS::t -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2022-10-29.18:38:59::SCWMssOS::Wextra"
+
+TRACE::2022-10-29.18:38:59::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2022-10-29.18:38:59::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-10-29.18:38:59::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-conver
+TRACE::2022-10-29.18:38:59::SCWMssOS::t -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2022-10-29.18:38:59::SCWMssOS::Wextra"
+
+TRACE::2022-10-29.18:38:59::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2022-10-29.18:38:59::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-10-29.18:38:59::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-
+TRACE::2022-10-29.18:38:59::SCWMssOS::convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+TRACE::2022-10-29.18:38:59::SCWMssOS::Wall -Wextra"
+
+TRACE::2022-10-29.18:38:59::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2022-10-29.18:38:59::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-10-29.18:38:59::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-co
+TRACE::2022-10-29.18:38:59::SCWMssOS::nvert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-10-29.18:38:59::SCWMssOS::ll -Wextra"
+
+TRACE::2022-10-29.18:38:59::SCWMssOS::"Running Make libs in microblaze_0/libsrc/axi_reg_v1_0/src"
+
+TRACE::2022-10-29.18:38:59::SCWMssOS::make -C microblaze_0/libsrc/axi_reg_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-10-29.18:38:59::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-conver
+TRACE::2022-10-29.18:38:59::SCWMssOS::t -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2022-10-29.18:38:59::SCWMssOS::Wextra"
+
+TRACE::2022-10-29.18:38:59::SCWMssOS::"Compiling axi_reg..."
+
+TRACE::2022-10-29.18:39:00::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2022-10-29.18:39:00::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2022-10-29.18:39:00::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -
+TRACE::2022-10-29.18:39:00::SCWMssOS::mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wex
+TRACE::2022-10-29.18:39:00::SCWMssOS::tra"
+
+TRACE::2022-10-29.18:39:00::SCWMssOS::"Compiling bram"
+
+TRACE::2022-10-29.18:39:00::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2022-10-29.18:39:00::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2022-10-29.18:39:00::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -
+TRACE::2022-10-29.18:39:00::SCWMssOS::mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wex
+TRACE::2022-10-29.18:39:00::SCWMssOS::tra"
+
+TRACE::2022-10-29.18:39:00::SCWMssOS::"Compiling cpu"
+
+TRACE::2022-10-29.18:39:00::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2022-10-29.18:39:00::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-10-29.18:39:00::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-con
+TRACE::2022-10-29.18:39:00::SCWMssOS::vert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-10-29.18:39:00::SCWMssOS::l -Wextra"
+
+TRACE::2022-10-29.18:39:00::SCWMssOS::"Compiling standalone";
+
+TRACE::2022-10-29.18:39:02::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2022-10-29.18:39:02::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-10-29.18:39:02::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-conve
+TRACE::2022-10-29.18:39:02::SCWMssOS::rt -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-10-29.18:39:02::SCWMssOS::-Wextra"
+
+TRACE::2022-10-29.18:39:02::SCWMssOS::"Compiling uartlite"
+
+TRACE::2022-10-29.18:39:03::SCWMssOS::'Finished building libraries'
+
+TRACE::2022-10-29.18:39:03::SCWMssOS::Copying to export directory.
+TRACE::2022-10-29.18:39:03::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2022-10-29.18:39:03::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2022-10-29.18:39:03::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2022-10-29.18:39:03::SCWSystem::Completed Processing the sysconfig top
+LOG::2022-10-29.18:39:03::SCWPlatform::Completed generating the artifacts for system configuration top
+TRACE::2022-10-29.18:39:03::SCWPlatform::Started preparing the platform 
+TRACE::2022-10-29.18:39:03::SCWSystem::Writing the bif file for system config top
+TRACE::2022-10-29.18:39:03::SCWSystem::dir created 
+TRACE::2022-10-29.18:39:03::SCWSystem::Writing the bif 
+TRACE::2022-10-29.18:39:03::SCWPlatform::Started writing the spfm file 
+TRACE::2022-10-29.18:39:03::SCWPlatform::Started writing the xpfm file 
+TRACE::2022-10-29.18:39:03::SCWPlatform::Completed generating the platform
+TRACE::2022-10-29.18:39:03::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:39:03::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:39:03::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:39:03::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:39:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:39:03::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:39:03::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:39:03::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:39:03::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:39:03::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:39:03::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:39:03::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:39:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:39:03::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:39:03::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:39:03::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:39:03::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:39:03::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:39:03::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:39:03::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:39:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:39:03::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:39:03::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:39:03::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:39:03::SCWWriter::formatted JSON is {
+	"platformName":	"top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"top",
+	"systems":	[{
+			"systemName":	"top",
+			"systemDesc":	"top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"top",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"9d37e20e7a2278a29672a050eded6aed",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2022-10-29.18:39:03::SCWPlatform::updated the xpfm file.
+TRACE::2022-10-29.18:39:03::SCWPlatform::Trying to open the hw design at E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform::DSA given E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform::DSA absoulate path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform::DSA directory E:/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-10-29.18:39:03::SCWPlatform:: Platform Path E:/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-10-29.18:39:03::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-10-29.18:39:03::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2022-10-29.18:39:03::SCWPlatform::Opened existing hwdb top_0
+TRACE::2022-10-29.18:39:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-10-29.18:39:03::SCWMssOS::Checking the sw design at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-10-29.18:39:03::SCWMssOS::DEBUG:  swdes dump  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-10-29.18:39:03::SCWMssOS::Sw design exists and opened at  E:/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:07:41::SCWPlatform::Trying to open the hw design at E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:41::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:41::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform::DSA directory E:/vivado_prj/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-11-01.21:07:44::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:07:44::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-11-01.21:07:44::SCWPlatform::Opened new HwDB with name top
+TRACE::2022-11-01.21:07:44::SCWReader::Active system found as  top
+TRACE::2022-11-01.21:07:44::SCWReader::Handling sysconfig top
+TRACE::2022-11-01.21:07:44::SCWDomain::checking for install qemu data   : 
+TRACE::2022-11-01.21:07:44::SCWPlatform::Trying to open the hw design at E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform::DSA directory E:/vivado_prj/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-11-01.21:07:44::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:07:44::SCWPlatform::Trying to set the existing hwdb with name top
+TRACE::2022-11-01.21:07:44::SCWPlatform::Opened existing hwdb top
+TRACE::2022-11-01.21:07:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-11-01.21:07:44::SCWPlatform::Trying to open the hw design at E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform::DSA directory E:/vivado_prj/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-11-01.21:07:44::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:07:44::SCWPlatform::Trying to set the existing hwdb with name top
+TRACE::2022-11-01.21:07:44::SCWPlatform::Opened existing hwdb top
+TRACE::2022-11-01.21:07:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-11-01.21:07:44::SCWPlatform::Trying to open the hw design at E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform::DSA directory E:/vivado_prj/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-11-01.21:07:44::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:07:44::SCWPlatform::Trying to set the existing hwdb with name top
+TRACE::2022-11-01.21:07:44::SCWPlatform::Opened existing hwdb top
+TRACE::2022-11-01.21:07:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-11-01.21:07:44::SCWMssOS::Checking the sw design at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:07:44::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2022-11-01.21:07:44::SCWMssOS::No sw design opened at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:07:44::SCWMssOS::mss exists loading the mss file  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:07:44::SCWMssOS::Opened the sw design from mss  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:07:44::SCWMssOS::Adding the swdes entry E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2022-11-01.21:07:44::SCWMssOS::updating the scw layer about changes
+TRACE::2022-11-01.21:07:44::SCWMssOS::Opened the sw design.  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:07:44::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2022-11-01.21:07:44::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2022-11-01.21:07:44::SCWPlatform::Trying to open the hw design at E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform::DSA directory E:/vivado_prj/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-11-01.21:07:44::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:07:44::SCWPlatform::Trying to set the existing hwdb with name top
+TRACE::2022-11-01.21:07:44::SCWPlatform::Opened existing hwdb top
+TRACE::2022-11-01.21:07:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-11-01.21:07:44::SCWMssOS::Checking the sw design at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:07:44::SCWMssOS::DEBUG:  swdes dump  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-11-01.21:07:44::SCWMssOS::Sw design exists and opened at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:07:44::SCWReader::No isolation master present  
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/tempdsa/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/tempdsa/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform:: Platform location is E:/vivado_prj/wx/hdmi_movie/vitis/top/tempdsa
+TRACE::2022-11-01.21:07:52::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/tempdsa/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:07:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-11-01.21:07:52::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2022-11-01.21:07:52::SCWPlatform::Trying to open the hw design at E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA directory E:/vivado_prj/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-11-01.21:07:52::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:07:52::SCWPlatform::Trying to set the existing hwdb with name top
+TRACE::2022-11-01.21:07:52::SCWPlatform::Opened existing hwdb top
+TRACE::2022-11-01.21:07:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-11-01.21:07:52::SCWPlatform::Trying to open the hw design at E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA directory E:/vivado_prj/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-11-01.21:07:52::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:07:52::SCWPlatform::Trying to set the existing hwdb with name top
+TRACE::2022-11-01.21:07:52::SCWPlatform::Opened existing hwdb top
+TRACE::2022-11-01.21:07:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-11-01.21:07:52::SCWMssOS::Checking the sw design at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:07:52::SCWMssOS::DEBUG:  swdes dump  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-11-01.21:07:52::SCWMssOS::Sw design exists and opened at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:07:52::SCWPlatform::Trying to open the hw design at E:/vivado_prj/wx/hdmi_movie/vitis/top/tempdsa/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/tempdsa/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/tempdsa/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA directory E:/vivado_prj/wx/hdmi_movie/vitis/top/tempdsa
+TRACE::2022-11-01.21:07:52::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/tempdsa/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:07:52::SCWPlatform::update - Opened existing hwdb top_0
+TRACE::2022-11-01.21:07:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-11-01.21:07:52::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2022-11-01.21:07:52::SCWPlatform::Trying to open the hw design at E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform::DSA directory E:/vivado_prj/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-11-01.21:07:52::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:07:52::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-11-01.21:07:53::SCWPlatform::Opened new HwDB with name top_1
+TRACE::2022-11-01.21:07:53::SCWPlatform::Trying to open the hw design at E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:53::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:53::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:53::SCWPlatform::DSA directory E:/vivado_prj/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-11-01.21:07:53::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:07:53::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:07:53::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2022-11-01.21:07:53::SCWPlatform::Opened existing hwdb top_1
+TRACE::2022-11-01.21:07:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-11-01.21:07:53::SCWMssOS::Checking the sw design at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:07:53::SCWMssOS::DEBUG:  swdes dump  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-11-01.21:07:53::SCWMssOS::Sw design exists and opened at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:07:53::SCWWriter::formatted JSON is {
+	"platformName":	"top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"top",
+	"systems":	[{
+			"systemName":	"top",
+			"systemDesc":	"top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"top",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"9d37e20e7a2278a29672a050eded6aed",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2022-11-01.21:08:03::SCWPlatform::Started generating the artifacts platform top
+TRACE::2022-11-01.21:08:03::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-11-01.21:08:03::SCWPlatform::Started generating the artifacts for system configuration top
+LOG::2022-11-01.21:08:03::SCWSystem::Checking the domain standalone_domain
+LOG::2022-11-01.21:08:03::SCWSystem::Not a boot domain 
+LOG::2022-11-01.21:08:03::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-11-01.21:08:03::SCWDomain::Generating domain artifcats
+TRACE::2022-11-01.21:08:03::SCWMssOS::Generating standalone artifcats
+TRACE::2022-11-01.21:08:03::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-11-01.21:08:03::SCWPlatform::Trying to open the hw design at E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:08:03::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:08:03::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:08:03::SCWPlatform::DSA directory E:/vivado_prj/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-11-01.21:08:03::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:08:03::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:08:03::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2022-11-01.21:08:03::SCWPlatform::Opened existing hwdb top_1
+TRACE::2022-11-01.21:08:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-11-01.21:08:03::SCWMssOS::Checking the sw design at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:08:03::SCWMssOS::DEBUG:  swdes dump  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-11-01.21:08:03::SCWMssOS::Sw design exists and opened at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:08:03::SCWMssOS::Completed writing the mss file at E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp
+TRACE::2022-11-01.21:08:03::SCWMssOS::Mss edits present, copying mssfile into export location E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:08:03::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-11-01.21:08:03::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-11-01.21:08:03::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2022-11-01.21:08:03::SCWMssOS::skipping the bsp build ... 
+TRACE::2022-11-01.21:08:03::SCWMssOS::Copying to export directory.
+TRACE::2022-11-01.21:08:04::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2022-11-01.21:08:04::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2022-11-01.21:08:04::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2022-11-01.21:08:04::SCWSystem::Completed Processing the sysconfig top
+LOG::2022-11-01.21:08:04::SCWPlatform::Completed generating the artifacts for system configuration top
+TRACE::2022-11-01.21:08:04::SCWPlatform::Started preparing the platform 
+TRACE::2022-11-01.21:08:04::SCWSystem::Writing the bif file for system config top
+TRACE::2022-11-01.21:08:04::SCWSystem::dir created 
+TRACE::2022-11-01.21:08:04::SCWSystem::Writing the bif 
+TRACE::2022-11-01.21:08:04::SCWPlatform::Started writing the spfm file 
+TRACE::2022-11-01.21:08:04::SCWPlatform::Started writing the xpfm file 
+TRACE::2022-11-01.21:08:04::SCWPlatform::Completed generating the platform
+TRACE::2022-11-01.21:08:04::SCWPlatform::Trying to open the hw design at E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:08:04::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:08:04::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:08:04::SCWPlatform::DSA directory E:/vivado_prj/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-11-01.21:08:04::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:08:04::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:08:04::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2022-11-01.21:08:04::SCWPlatform::Opened existing hwdb top_1
+TRACE::2022-11-01.21:08:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-11-01.21:08:04::SCWMssOS::Checking the sw design at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:08:04::SCWMssOS::DEBUG:  swdes dump  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-11-01.21:08:04::SCWMssOS::Sw design exists and opened at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:08:04::SCWWriter::formatted JSON is {
+	"platformName":	"top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"top",
+	"systems":	[{
+			"systemName":	"top",
+			"systemDesc":	"top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"top",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"9d37e20e7a2278a29672a050eded6aed",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2022-11-01.21:08:04::SCWPlatform::updated the xpfm file.
+TRACE::2022-11-01.21:08:06::SCWPlatform::Trying to open the hw design at E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:08:06::SCWPlatform::DSA given E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:08:06::SCWPlatform::DSA absoulate path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:08:06::SCWPlatform::DSA directory E:/vivado_prj/wx/hdmi_movie/vitis/top/hw
+TRACE::2022-11-01.21:08:06::SCWPlatform:: Platform Path E:/vivado_prj/wx/hdmi_movie/vitis/top/hw/top.xsa
+TRACE::2022-11-01.21:08:06::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-11-01.21:08:06::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2022-11-01.21:08:06::SCWPlatform::Opened existing hwdb top_1
+TRACE::2022-11-01.21:08:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-11-01.21:08:06::SCWMssOS::Checking the sw design at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-11-01.21:08:06::SCWMssOS::DEBUG:  swdes dump  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-11-01.21:08:06::SCWMssOS::Sw design exists and opened at  E:/vivado_prj/wx/hdmi_movie/vitis/top/microblaze_0/standalone_domain/bsp/system.mss

@@ -1,0 +1,6 @@
+2022-11-01T21:08:25.656394600255-21:08:25 **** Incremental Build of configuration Debug for project camera_uart_system ****
+000-make all 
+000-Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+00255-
+21:08:25 Build Finished (took 245ms)
+

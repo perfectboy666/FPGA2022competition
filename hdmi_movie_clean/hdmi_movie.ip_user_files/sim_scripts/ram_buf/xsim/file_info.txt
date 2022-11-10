@@ -1,0 +1,2 @@
+ram_buf.v,verilog,xil_defaultlib,../../../ip/ram_buf/sim/ram_buf.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

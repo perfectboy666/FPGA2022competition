@@ -1,0 +1,24 @@
+21:07:57 **** Incremental Build of project top ****
+buildplatform.bat 50349 top no_domain_build 
+XSDB Server Channel: tcfchan#1
+21:08:06 **** Incremental Build of configuration Debug for project camera_uart ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -IE:/vivado_prj/wx/hdmi_movie/vitis/top/export/top/sw/top/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: camera_uart.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/vivado_prj/wx/hdmi_movie/vitis/top/export/top/sw/top/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "camera_uart.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: camera_uart.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size camera_uart.elf  |tee "camera_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2080	    268	   3108	   5456	   1550	camera_uart.elf
+'Finished building: camera_uart.elf.size'
+' '
+21:08:25 **** Incremental Build of configuration Debug for project camera_uart_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

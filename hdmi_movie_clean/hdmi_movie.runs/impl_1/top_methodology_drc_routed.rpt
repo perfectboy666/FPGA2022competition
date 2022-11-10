@@ -1,0 +1,1263 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Nov  9 09:14:44 2022
+| Host         : DESKTOP-MUNN8T1 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+| Design       : top
+| Device       : xc7a35tfgg484-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 242
++-----------+------------------+--------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                            | Violations |
++-----------+------------------+--------------------------------------------------------+------------+
+| TIMING-1  | Critical Warning | Invalid clock waveform on Clock Modifying Block        | 1          |
+| TIMING-3  | Critical Warning | Invalid primary clock on Clock Modifying Block         | 5          |
+| TIMING-6  | Critical Warning | No common primary clock between related clocks         | 3          |
+| TIMING-7  | Critical Warning | No common node between related clocks                  | 3          |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                            | 61         |
+| LUTAR-1   | Warning          | LUT drives async reset alert                           | 14         |
+| PDRC-190  | Warning          | Suboptimally placed synchronized register chain        | 23         |
+| SYNTH-9   | Warning          | Small multiplier                                       | 39         |
+| TIMING-9  | Warning          | Unknown CDC Logic                                      | 1          |
+| TIMING-10 | Warning          | Missing property on synchronizer                       | 1          |
+| TIMING-18 | Warning          | Missing input or output delay                          | 44         |
+| TIMING-20 | Warning          | Non-clocked latch                                      | 24         |
+| TIMING-24 | Warning          | Overridden Max delay datapath only                     | 5          |
+| XDCB-5    | Warning          | Runtime inefficient way to find pin objects            | 1          |
+| XDCC-7    | Warning          | Scoped Clock constraint overwritten on the same source | 1          |
+| REQP-1959 | Advisory         | connects_SERDES_RST_driver_not_FF                      | 16         |
++-----------+------------------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-1#1 Critical Warning
+Invalid clock waveform on Clock Modifying Block  
+Invalid clock waveform for clock sys_clk_9 specified at a MMCME2_ADV output clock_manage_inst/inst/mmcm_adv_inst/CLKOUT3 that does not match the CMB settings. The waveform of the clock is 100 {0 50}. The expected waveform is 111.1 {0 55.56}
+Related violations: <none>
+
+TIMING-3#1 Critical Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock ddr_clk is created on the output pin or net ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-3#2 Critical Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock ddr_ref_clk is created on the output pin or net clock_manage_inst/inst/mmcm_adv_inst/CLKOUT0 of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-3#3 Critical Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock sys_clk_100 is created on the output pin or net clock_manage_inst/inst/mmcm_adv_inst/CLKOUT1 of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-3#4 Critical Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock sys_clk_50 is created on the output pin or net clock_manage_inst/inst/mmcm_adv_inst/CLKOUT2 of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-3#5 Critical Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock sys_clk_9 is created on the output pin or net clock_manage_inst/inst/mmcm_adv_inst/CLKOUT3 of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks ddr_clk and u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks ddr_clk] -to [get_clocks u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk_1]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks ddr_clk and u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks ddr_clk] -to [get_clocks u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk_1]
+Related violations: <none>
+
+TIMING-6#3 Critical Warning
+No common primary clock between related clocks  
+The clocks sys_clk_100 and sys_clk_9 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sys_clk_100] -to [get_clocks sys_clk_9]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks ddr_clk and u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks ddr_clk] -to [get_clocks u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk_1]
+Related violations: <none>
+
+TIMING-7#2 Critical Warning
+No common node between related clocks  
+The clocks ddr_clk and u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks ddr_clk] -to [get_clocks u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk_1]
+Related violations: <none>
+
+TIMING-7#3 Critical Warning
+No common node between related clocks  
+The clocks sys_clk_100 and sys_clk_9 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sys_clk_100] -to [get_clocks sys_clk_9]
+Related violations: <none>
+
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/busy_arr_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/busy_arr_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/busy_arr_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cfg_index_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cfg_index_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cfg_index_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cfg_index_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cfg_index_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cfg_index_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cfg_index_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cfg_index_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cfg_index_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/cnt_200us_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/busy_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/cfg_cnt_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/cfg_cnt_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/cfg_cnt_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/cfg_cnt_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/cfg_cnt_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/cfg_cnt_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/done_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/iic_scl_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#51 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#52 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#53 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#54 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#55 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#56 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#57 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#58 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#59 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#60 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#61 Critical Warning
+Non-clocked sequential cell  
+The clock pin ov5640_cfg_inst/start_reg/C is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell ddr3_top_inst/h_cnt[15]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) matrix_add_inst/col_cnt_reg[0]/CLR, matrix_add_inst/col_cnt_reg[10]/CLR, matrix_add_inst/col_cnt_reg[1]/CLR, matrix_add_inst/col_cnt_reg[2]/CLR, matrix_add_inst/col_cnt_reg[3]/CLR, matrix_add_inst/col_cnt_reg[4]/CLR, matrix_add_inst/col_cnt_reg[5]/CLR, matrix_add_inst/col_cnt_reg[6]/CLR, matrix_add_inst/col_cnt_reg[7]/CLR, matrix_add_inst/col_cnt_reg[8]/CLR, matrix_add_inst/col_cnt_reg[9]/CLR, matrix_add_inst/matrix_done_reg/CLR, matrix_add_inst/row_cnt_reg[0]/CLR, matrix_add_inst/row_cnt_reg[10]/CLR, matrix_add_inst/row_cnt_reg[1]/CLR (the first 15 of 350 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell ddr3_top_inst/move_detect_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) move_detect_inst/hcout_reg[0]/CLR, move_detect_inst/hcout_reg[10]/CLR, move_detect_inst/hcout_reg[1]/CLR, move_detect_inst/hcout_reg[2]/CLR, move_detect_inst/hcout_reg[3]/CLR, move_detect_inst/hcout_reg[4]/CLR, move_detect_inst/hcout_reg[5]/CLR, move_detect_inst/hcout_reg[6]/CLR, move_detect_inst/hcout_reg[7]/CLR, move_detect_inst/hcout_reg[8]/CLR, move_detect_inst/hcout_reg[9]/CLR, move_detect_inst/post1_img_reg[0]/CLR, move_detect_inst/post1_img_reg[10]/CLR, move_detect_inst/post1_img_reg[11]/CLR, move_detect_inst/post1_img_reg[12]/CLR (the first 15 of 241 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_iodelay_ctrl/rstdiv2_sync_r[11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__0/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__1/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__10/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__11/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__12/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__13/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__14/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__15/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__16/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__17/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__18/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__19/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__2/PRE, ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__3/PRE (the first 15 of 33 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/goreg_bm.dout_i[7]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]/CLR, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[1]/CLR, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_fb_i_reg/PRE, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i_reg/PRE, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_i_reg/PRE, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_o_i_reg/PRE, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg/PRE, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[10]/CLR, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR, matrix_add_inst/fifo_8xcol_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]/CLR (the first 15 of 54 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/goreg_bm.dout_i[7]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]/CLR, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[1]/CLR, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_fb_i_reg/PRE, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i_reg/PRE, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_i_reg/PRE, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_o_i_reg/PRE, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg/PRE, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[10]/CLR, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR, matrix_add_inst/fifo_8xcol_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]/CLR (the first 15 of 54 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell mbs_bd_inst/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) mbs_bd_inst/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell ov5640_cfg_inst/byte_flag_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ov5640_data_inst/byte_flag_reg/CLR, ov5640_data_inst/frame_cnt_reg[0]/CLR, ov5640_data_inst/frame_cnt_reg[1]/CLR, ov5640_data_inst/frame_cnt_reg[2]/CLR, ov5640_data_inst/frame_cnt_reg[3]/CLR, ov5640_data_inst/m_data_reg[0]/CLR, ov5640_data_inst/m_data_reg[10]/CLR, ov5640_data_inst/m_data_reg[11]/CLR, ov5640_data_inst/m_data_reg[12]/CLR, ov5640_data_inst/m_data_reg[13]/CLR, ov5640_data_inst/m_data_reg[14]/CLR, ov5640_data_inst/m_data_reg[15]/CLR, ov5640_data_inst/m_data_reg[1]/CLR, ov5640_data_inst/m_data_reg[2]/CLR, ov5640_data_inst/m_data_reg[3]/CLR (the first 15 of 26 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell power_on_delay_inst/wsda_reg[28]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ov5640_cfg_inst/busy_arr_reg[0]/CLR, ov5640_cfg_inst/busy_arr_reg[1]/CLR, ov5640_cfg_inst/busy_arr_reg[2]/CLR, ov5640_cfg_inst/cfg_index_reg[0]/CLR, ov5640_cfg_inst/cfg_index_reg[1]/CLR, ov5640_cfg_inst/cfg_index_reg[2]/CLR, ov5640_cfg_inst/cfg_index_reg[3]/CLR, ov5640_cfg_inst/cfg_index_reg[4]/CLR, ov5640_cfg_inst/cfg_index_reg[5]/CLR, ov5640_cfg_inst/cfg_index_reg[6]/CLR, ov5640_cfg_inst/cfg_index_reg[7]/CLR, ov5640_cfg_inst/cfg_index_reg[8]/CLR, ov5640_cfg_inst/cnt_200us_reg[0]/CLR, ov5640_cfg_inst/cnt_200us_reg[10]/CLR, ov5640_cfg_inst/cnt_200us_reg[11]/CLR (the first 15 of 61 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell xdma_v1_inst/cmd_ctrl_inst/camrea_data_fifo_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) data_ctrl_inst/camrea_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE, data_ctrl_inst/camrea_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE, data_ctrl_inst/camrea_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE, data_ctrl_inst/camrea_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell xdma_v1_inst/cmd_ctrl_inst/fifo_64x1024_cnt_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) data_ctrl_inst/fifo_64x1024_cnt_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE, data_ctrl_inst/fifo_64x1024_cnt_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE, data_ctrl_inst/fifo_64x1024_cnt_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE, data_ctrl_inst/fifo_64x1024_cnt_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X9Y6 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X8Y5 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X8Y7 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X7Y5 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X6Y7 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X4Y7 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X7Y7 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[3] in site SLICE_X7Y9 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X6Y5 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X7Y3 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X5Y4 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X32Y84 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#13 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X29Y83 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#14 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X33Y85 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#15 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X30Y82 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#16 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X30Y84 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#17 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X33Y83 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#18 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X32Y81 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#19 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X34Y81 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#20 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X33Y81 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#21 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X34Y83 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#22 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X35Y83 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#23 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X31Y83 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+SYNTH-9#1 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_blue_r0_reg[10]_i_1 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#2 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_blue_r0_reg[10]_i_10 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#3 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_blue_r0_reg[12]_i_1 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#4 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_blue_r0_reg[12]_i_5 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#5 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_blue_r0_reg[2]_i_1 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#6 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_blue_r0_reg[6]_i_1 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#7 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_green_r0_reg[10]_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#8 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_green_r0_reg[14]_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#9 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_green_r0_reg[15]_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#10 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_green_r0_reg[15]_i_3 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#11 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_green_r0_reg[2]_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#12 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_green_r0_reg[6]_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#13 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_green_r0_reg[6]_i_2 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#14 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_red_r0_reg[13]_i_1 of size 8x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#15 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_red_r0_reg[13]_i_5 of size 8x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#16 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_red_r0_reg[1]_i_1 of size 8x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#17 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_red_r0_reg[5]_i_1 of size 8x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#18 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_red_r0_reg[5]_i_2 of size 8x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#19 Warning
+Small multiplier  
+Detected multiplier at move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_red_r0_reg[9]_i_1 of size 8x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#20 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_b_mul_reg[10]_i_1 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#21 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_b_mul_reg[10]_i_10 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#22 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_b_mul_reg[12]_i_1 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#23 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_b_mul_reg[12]_i_5 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#24 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_b_mul_reg[2]_i_1 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#25 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_b_mul_reg[6]_i_1 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#26 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_g_mul_reg[10]_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#27 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_g_mul_reg[10]_i_10 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#28 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_g_mul_reg[14]_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#29 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_g_mul_reg[15]_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#30 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_g_mul_reg[15]_i_3 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#31 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_g_mul_reg[2]_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#32 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_g_mul_reg[6]_i_1 of size 8x8, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#33 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_r_mul_reg[13]_i_1 of size 8x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#34 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_r_mul_reg[14]_i_1 of size 8x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#35 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_r_mul_reg[14]_i_3 of size 8x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#36 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_r_mul_reg[5]_i_1 of size 8x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#37 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_r_mul_reg[5]_i_2 of size 8x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#38 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_r_mul_reg[9]_i_1 of size 8x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#39 Warning
+Small multiplier  
+Detected multiplier at rgbtogray_inst/rgb_r_mul_reg[9]_i_2 of size 8x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_d[0] relative to clock(s) camera_clk
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_d[1] relative to clock(s) camera_clk
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_d[2] relative to clock(s) camera_clk
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_d[3] relative to clock(s) camera_clk
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_d[4] relative to clock(s) camera_clk
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_d[5] relative to clock(s) camera_clk
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_d[6] relative to clock(s) camera_clk
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_d[7] relative to clock(s) camera_clk
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_href relative to clock(s) camera_clk
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_vsync relative to clock(s) camera_clk
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on rst_n relative to clock(s) ddr_clk, ddr_ref_clk
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on uart_rx relative to clock(s) sys_clk_100
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on cmos1_reset relative to clock(s) sys_clk_50
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on ddr3_reset_n relative to clock(s) ddr_clk
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_b[0] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_b[1] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_b[2] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_b[3] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_b[4] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_b[5] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_b[6] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_b[7] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_dvalid relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_g[0] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_g[1] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_g[2] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_g[3] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_g[4] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_g[5] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_g[6] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_g[7] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_hsync relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_r[0] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_r[1] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_r[2] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_r[3] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_r[4] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_r[5] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_r[6] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_r[7] relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An output delay is missing on hdmi_vsync relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An output delay is missing on led0 relative to clock(s) ddr_clk
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An output delay is missing on led3 relative to clock(s) sys_clk_9
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An output delay is missing on uart_tx relative to clock(s) sys_clk_100
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a11_reg[0] cannot be properly analyzed as its control pin sobel_ctrl_inst/a11_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a11_reg[1] cannot be properly analyzed as its control pin sobel_ctrl_inst/a11_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a11_reg[2] cannot be properly analyzed as its control pin sobel_ctrl_inst/a11_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a11_reg[3] cannot be properly analyzed as its control pin sobel_ctrl_inst/a11_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a11_reg[4] cannot be properly analyzed as its control pin sobel_ctrl_inst/a11_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a11_reg[5] cannot be properly analyzed as its control pin sobel_ctrl_inst/a11_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a11_reg[6] cannot be properly analyzed as its control pin sobel_ctrl_inst/a11_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a11_reg[7] cannot be properly analyzed as its control pin sobel_ctrl_inst/a11_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a21_reg[0] cannot be properly analyzed as its control pin sobel_ctrl_inst/a21_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a21_reg[1] cannot be properly analyzed as its control pin sobel_ctrl_inst/a21_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a21_reg[2] cannot be properly analyzed as its control pin sobel_ctrl_inst/a21_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a21_reg[3] cannot be properly analyzed as its control pin sobel_ctrl_inst/a21_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a21_reg[4] cannot be properly analyzed as its control pin sobel_ctrl_inst/a21_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a21_reg[5] cannot be properly analyzed as its control pin sobel_ctrl_inst/a21_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a21_reg[6] cannot be properly analyzed as its control pin sobel_ctrl_inst/a21_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a21_reg[7] cannot be properly analyzed as its control pin sobel_ctrl_inst/a21_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a31_reg[0] cannot be properly analyzed as its control pin sobel_ctrl_inst/a31_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a31_reg[1] cannot be properly analyzed as its control pin sobel_ctrl_inst/a31_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a31_reg[2] cannot be properly analyzed as its control pin sobel_ctrl_inst/a31_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a31_reg[3] cannot be properly analyzed as its control pin sobel_ctrl_inst/a31_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a31_reg[4] cannot be properly analyzed as its control pin sobel_ctrl_inst/a31_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a31_reg[5] cannot be properly analyzed as its control pin sobel_ctrl_inst/a31_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a31_reg[6] cannot be properly analyzed as its control pin sobel_ctrl_inst/a31_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch sobel_ctrl_inst/a31_reg[7] cannot be properly analyzed as its control pin sobel_ctrl_inst/a31_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 41 in the Timing Constraints window in Vivado IDE) between clocks camera_clk and ddr_clk overrides a set_max_delay -datapath_only (position 57). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 42 in the Timing Constraints window in Vivado IDE) between clocks ddr_clk and camera_clk overrides a set_max_delay -datapath_only (position 55). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#3 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 43 in the Timing Constraints window in Vivado IDE) between clocks ddr_clk and ddr_ref_clk overrides a set_max_delay -datapath_only (position 29). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#4 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 45 in the Timing Constraints window in Vivado IDE) between clocks ddr_clk and sys_clk_9 overrides a set_max_delay -datapath_only (position 59). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#5 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 46 in the Timing Constraints window in Vivado IDE) between clocks sys_clk_9 and ddr_clk overrides a set_max_delay -datapath_only (position 61). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '26' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/user_design/constraints/mig_7series_axi.xdc (Line: 354)
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 20.000 -name sys_clk [get_ports clk_in] (Source: D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc (Line: 109))
+Previous: create_clock -period 20.000 [get_ports clk_in] (Source: d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/clock_manage/clock_manage.xdc (Line: 56))
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#3 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#4 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#5 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#6 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#7 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#8 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[9].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#9 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#10 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#11 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#12 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#13 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#14 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#15 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#16 Advisory
+connects_SERDES_RST_driver_not_FF  
+ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[9].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+

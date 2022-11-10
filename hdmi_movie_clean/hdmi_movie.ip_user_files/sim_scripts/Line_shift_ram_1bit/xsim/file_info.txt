@@ -1,0 +1,2 @@
+Line_shift_ram_1bit.vhd,vhdl,xil_defaultlib,../../../ip/Line_shift_ram_1bit/sim/Line_shift_ram_1bit.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

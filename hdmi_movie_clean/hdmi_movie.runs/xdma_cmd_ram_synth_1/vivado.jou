@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Oct 21 21:20:54 2022
+# Process ID: 8904
+# Current directory: E:/wx/hdmi_movie/hdmi_movie.runs/xdma_cmd_ram_synth_1
+# Command line: vivado.exe -log xdma_cmd_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xdma_cmd_ram.tcl
+# Log file: E:/wx/hdmi_movie/hdmi_movie.runs/xdma_cmd_ram_synth_1/xdma_cmd_ram.vds
+# Journal file: E:/wx/hdmi_movie/hdmi_movie.runs/xdma_cmd_ram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source xdma_cmd_ram.tcl -notrace

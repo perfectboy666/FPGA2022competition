@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Oct 23 21:59:12 2022
+# Process ID: 18696
+# Current directory: E:/vivado_prj/wx/hdmi_movie/hdmi_movie.runs/camrea_data_fifo_synth_1
+# Command line: vivado.exe -log camrea_data_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source camrea_data_fifo.tcl
+# Log file: E:/vivado_prj/wx/hdmi_movie/hdmi_movie.runs/camrea_data_fifo_synth_1/camrea_data_fifo.vds
+# Journal file: E:/vivado_prj/wx/hdmi_movie/hdmi_movie.runs/camrea_data_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source camrea_data_fifo.tcl -notrace

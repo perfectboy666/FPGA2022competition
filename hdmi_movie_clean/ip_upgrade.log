@@ -1,0 +1,323 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Oct 31 17:45:48 2022
+| Host         : DESKTOP-MUNN8T1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mbs_bd_axi_reg_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of mbs_bd_axi_reg_0_0 (xilinx.com:user:axi_reg:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'mbs_bd_axi_reg_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'pic_mode'
+
+-Upgrade has added port 'pic_mode_valid'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Oct 23 22:08:25 2022
+| Host         : LAPTOP-DU97D6U5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ram_buf'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ram_buf (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Oct 23 22:08:22 2022
+| Host         : LAPTOP-DU97D6U5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_delay'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of fifo_delay (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Oct 23 22:08:21 2022
+| Host         : LAPTOP-DU97D6U5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Line_shift_ram_1bit'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of Line_shift_ram_1bit (xilinx.com:ip:c_shift_ram:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Oct 21 21:19:25 2022
+| Host         : MT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'xdma_cmd_ram'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of xdma_cmd_ram (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 2) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Oct 21 21:19:24 2022
+| Host         : MT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vio_thresh'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vio_thresh (xilinx.com:ip:vio:3.0 (Rev. 19)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Oct 21 21:19:24 2022
+| Host         : MT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vio_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vio_0 (xilinx.com:ip:vio:3.0 (Rev. 19)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Oct 21 21:19:23 2022
+| Host         : MT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'shift_reg_ram'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of shift_reg_ram (xilinx.com:ip:c_shift_ram:12.0) from (Rev. 12) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Oct 21 21:19:23 2022
+| Host         : MT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'shift_ram_sobel'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of shift_ram_sobel (xilinx.com:ip:c_shift_ram:12.0) from (Rev. 12) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Oct 21 21:19:23 2022
+| Host         : MT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_1 (xilinx.com:ip:ila:6.2) from (Rev. 8) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Oct 21 21:19:22 2022
+| Host         : MT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_0 (xilinx.com:ip:ila:6.2) from (Rev. 8) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Oct 21 21:19:20 2022
+| Host         : MT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_8xcol'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fifo_8xcol (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Oct 21 21:19:20 2022
+| Host         : MT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_64x1024_cnt'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fifo_64x1024_cnt (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Oct 21 21:19:20 2022
+| Host         : MT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_64x1024'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fifo_64x1024 (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Oct 21 21:19:20 2022
+| Host         : MT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'camrea_data_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of camrea_data_fifo (xilinx.com:ip:fifo_generator:13.2) from (Rev. 3) to (Rev. 5)
+

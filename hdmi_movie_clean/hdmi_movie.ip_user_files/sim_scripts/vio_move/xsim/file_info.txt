@@ -1,0 +1,2 @@
+vio_move.v,verilog,xil_defaultlib,../../../../hdmi_movie.srcs/sources_1/ip/vio_move/sim/vio_move.v,incdir="../../../../hdmi_movie.srcs/sources_1/ip/vio_move/hdl/verilog"incdir="../../../../hdmi_movie.srcs/sources_1/ip/vio_move/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

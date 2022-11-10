@@ -1,0 +1,132 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "9999999"
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "sobel_ctrl_inst/vio_thresh_inst",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "585E800CFB96588293F56880A939C5D6",
+                        "pins": [
+                            {
+                                "name": "probe_out0",
+                                "id": 0,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "sobel_ctrl_inst/sobel_num",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "sobel_ctrl_inst/sobel_num[7]"
+                                            },
+                                            {
+                                                "name": "sobel_ctrl_inst/sobel_num[6]"
+                                            },
+                                            {
+                                                "name": "sobel_ctrl_inst/sobel_num[5]"
+                                            },
+                                            {
+                                                "name": "sobel_ctrl_inst/sobel_num[4]"
+                                            },
+                                            {
+                                                "name": "sobel_ctrl_inst/sobel_num[3]"
+                                            },
+                                            {
+                                                "name": "sobel_ctrl_inst/sobel_num[2]"
+                                            },
+                                            {
+                                                "name": "sobel_ctrl_inst/sobel_num[1]"
+                                            },
+                                            {
+                                                "name": "sobel_ctrl_inst/sobel_num[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "vio_move_inst",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "022873B3DF585B21B9FC5FA3277CABC1",
+                        "pins": [
+                            {
+                                "name": "probe_out0",
+                                "id": 1,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "move_thresh",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "move_thresh[7]"
+                                            },
+                                            {
+                                                "name": "move_thresh[6]"
+                                            },
+                                            {
+                                                "name": "move_thresh[5]"
+                                            },
+                                            {
+                                                "name": "move_thresh[4]"
+                                            },
+                                            {
+                                                "name": "move_thresh[3]"
+                                            },
+                                            {
+                                                "name": "move_thresh[2]"
+                                            },
+                                            {
+                                                "name": "move_thresh[1]"
+                                            },
+                                            {
+                                                "name": "move_thresh[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

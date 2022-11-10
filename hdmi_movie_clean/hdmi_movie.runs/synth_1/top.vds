@@ -1,0 +1,1465 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Nov  9 09:08:35 2022
+# Process ID: 10748
+# Current directory: D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/top.vds
+# Journal file: D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/wx_prj/hdmi_movie_clean/axi_ip/axi_reg_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/vivado2019.2/Vivado/2019.2/data/ip'.
+Command: synth_design -top top -part xc7a35tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15044 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1025.293 ; gain = 235.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vio_move' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/vio_move_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_move' (1#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/vio_move_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clock_manage' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/clock_manage_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clock_manage' (2#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/clock_manage_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'power_on_delay' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/power_on_delay.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'power_on_delay' (3#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/power_on_delay.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ov5640_cfg' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_cfg.v:24]
+	Parameter ANUM bound to: 255 - type: integer 
+	Parameter DELAY_200US bound to: 10000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ov5640_iic' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_iic.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ov5640_iic' (4#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_iic.v:24]
+WARNING: [Synth 8-3848] Net estart in module/entity ov5640_cfg does not have driver. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_cfg.v:51]
+WARNING: [Synth 8-3848] Net ewdata in module/entity ov5640_cfg does not have driver. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_cfg.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'ov5640_cfg' (5#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_cfg.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ov5640_data' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_data.v:24]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_data.v:29]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_data.v:30]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_data.v:35]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_data.v:55]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_data.v:56]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_data.v:57]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_data.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'ov5640_data' (6#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ov5640_data.v:24]
+INFO: [Synth 8-6157] synthesizing module 'uart_data_gen' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/uart_data_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uart_data_gen' (7#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/uart_data_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'data_ctrl' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:1]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:19]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:41]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:42]
+INFO: [Synth 8-6157] synthesizing module 'camrea_data_fifo' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/camrea_data_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'camrea_data_fifo' (8#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/camrea_data_fifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_64x1024_cnt' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/fifo_64x1024_cnt_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_64x1024_cnt' (9#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/fifo_64x1024_cnt_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element data_out_cnt_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:83]
+WARNING: [Synth 8-6014] Unused sequential element packet_cnt_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:106]
+WARNING: [Synth 8-6014] Unused sequential element rd_trig_sys0_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:119]
+WARNING: [Synth 8-6014] Unused sequential element rd_trig_sys1_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:120]
+WARNING: [Synth 8-6014] Unused sequential element rd_trig_sys2_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:121]
+WARNING: [Synth 8-6014] Unused sequential element rd_ddr_sum_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:136]
+WARNING: [Synth 8-6014] Unused sequential element rd_frame_cnt_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:148]
+WARNING: [Synth 8-6014] Unused sequential element wr_ddr_sum_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:198]
+WARNING: [Synth 8-6014] Unused sequential element wr_ddr_dcnt_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:210]
+WARNING: [Synth 8-6014] Unused sequential element wr_frame_cnt_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:222]
+WARNING: [Synth 8-6014] Unused sequential element vga_fifo_wren_d_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:232]
+WARNING: [Synth 8-6014] Unused sequential element rd_ddr_len_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:242]
+WARNING: [Synth 8-6014] Unused sequential element rd_ddr_dcnt_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:254]
+INFO: [Synth 8-6155] done synthesizing module 'data_ctrl' (10#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/data_ctrl.v:1]
+WARNING: [Synth 8-7023] instance 'data_ctrl_inst' of module 'data_ctrl' has 20 connections declared, but only 19 given [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/top.v:456]
+INFO: [Synth 8-6157] synthesizing module 'xdma_v1' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/xdma_v1.v:1]
+	Parameter U_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter U_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter U_ID_WIDTH bound to: 4 - type: integer 
+	Parameter U_ARLEN_WIDTH bound to: 4 - type: integer 
+	Parameter U_RSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter U_ARSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter U_ARBURST_WIDTH bound to: 2 - type: integer 
+	Parameter U_RD_LENGTH_WIDTH bound to: 32 - type: integer 
+	Parameter U_ARSIZE bound to: 3 - type: integer 
+	Parameter U_RID bound to: 0 - type: integer 
+	Parameter U_AWLEN_WIDTH bound to: 4 - type: integer 
+	Parameter U_WSTRB_WIDTH bound to: 8 - type: integer 
+	Parameter U_AWSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter U_AWBURST_WIDTH bound to: 2 - type: integer 
+	Parameter U_WR_LENGTH_WIDTH bound to: 32 - type: integer 
+	Parameter U_AWSIZE bound to: 3 - type: integer 
+	Parameter U_WID bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cmd_ctrl' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:1]
+	Parameter BANK_MAX bound to: 4'b0010 
+	Parameter S_IDLE bound to: 4'b0001 
+	Parameter S_WAIT bound to: 4'b0010 
+	Parameter S_WACK bound to: 4'b0100 
+	Parameter S_WR_DDR bound to: 4'b1000 
+	Parameter S_DDR_IDLE bound to: 4'b0001 
+	Parameter S_WAIT_TRIG bound to: 4'b0010 
+	Parameter S_RD_DDR bound to: 4'b0100 
+	Parameter S_RD_ACK bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:31]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:33]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:34]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:36]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:38]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:40]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:42]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:55]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:56]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:60]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:61]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:63]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:64]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:68]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:74]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:79]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:80]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:82]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'cmd_ctrl' (11#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/cmd_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'axi_master_rd' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/axi_master_rd.v:2]
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter ARLEN_WIDTH bound to: 4 - type: integer 
+	Parameter ARSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter ARBURST_WIDTH bound to: 2 - type: integer 
+	Parameter RD_LENGTH_WIDTH bound to: 32 - type: integer 
+	Parameter ARSIZE bound to: 3 - type: integer 
+	Parameter RID bound to: 0 - type: integer 
+	Parameter IDLE bound to: 3'b001 
+	Parameter TRANS bound to: 3'b010 
+	Parameter DONE bound to: 3'b100 
+	Parameter RIDLE bound to: 3'b001 
+	Parameter RADDR bound to: 3'b010 
+	Parameter RDATA bound to: 3'b100 
+WARNING: [Synth 8-6014] Unused sequential element rburst_cnt_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/axi_master_rd.v:217]
+WARNING: [Synth 8-6014] Unused sequential element rd_addr_d_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/axi_master_rd.v:244]
+INFO: [Synth 8-6155] done synthesizing module 'axi_master_rd' (12#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/axi_master_rd.v:2]
+INFO: [Synth 8-6157] synthesizing module 'wr_time_ctrl' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/wr_time_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'xdma_cmd_ram' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/xdma_cmd_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xdma_cmd_ram' (13#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/xdma_cmd_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wr_time_ctrl' (14#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/wr_time_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'axi_master_wr' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/axi_master_wr.v:2]
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter AWLEN_WIDTH bound to: 4 - type: integer 
+	Parameter WSTRB_WIDTH bound to: 8 - type: integer 
+	Parameter AWSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter AWBURST_WIDTH bound to: 2 - type: integer 
+	Parameter BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter WR_LENGTH_WIDTH bound to: 32 - type: integer 
+	Parameter AWSIZE bound to: 3 - type: integer 
+	Parameter WID bound to: 0 - type: integer 
+	Parameter IDLE bound to: 3'b001 
+	Parameter TRANS bound to: 3'b010 
+	Parameter DONE bound to: 3'b100 
+	Parameter BIDLE bound to: 4'b0001 
+	Parameter AWADDR bound to: 4'b0010 
+	Parameter WDATA bound to: 4'b0100 
+	Parameter WRESP bound to: 4'b1000 
+WARNING: [Synth 8-6014] Unused sequential element wr_addr_d_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/axi_master_wr.v:170]
+WARNING: [Synth 8-3848] Net awid in module/entity axi_master_wr does not have driver. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/axi_master_wr.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'axi_master_wr' (15#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/axi_master_wr.v:2]
+WARNING: [Synth 8-6014] Unused sequential element cnt_axis_data_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/xdma_v1.v:168]
+WARNING: [Synth 8-6014] Unused sequential element cnt_axi4_data_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/xdma_v1.v:180]
+INFO: [Synth 8-6155] done synthesizing module 'xdma_v1' (16#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/xdma_v1.v:1]
+WARNING: [Synth 8-689] width (28) of port connection 'araddr' does not match port width (32) of module 'xdma_v1' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/top.v:484]
+WARNING: [Synth 8-689] width (28) of port connection 'awaddr' does not match port width (32) of module 'xdma_v1' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/top.v:497]
+INFO: [Synth 8-6157] synthesizing module 'ddr3_top' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ddr3_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_axi' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mig_7series_axi_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_axi' (17#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mig_7series_axi_stub.v:5]
+WARNING: [Synth 8-7023] instance 'u_mig_7series_axi_inst' of module 'mig_7series_axi' has 66 connections declared, but only 65 given [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ddr3_top.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'ddr3_top' (18#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/ddr3_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_ctrl' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/vga_ctrl.v:1]
+	Parameter h_total_time bound to: 16'b0000001000001101 
+	Parameter h_sync_time bound to: 16'b0000000000101001 
+	Parameter h_back_porch bound to: 16'b0000000000000010 
+	Parameter h_addr_time bound to: 16'b0000000111100000 
+	Parameter v_total_time bound to: 16'b0000000100011110 
+	Parameter v_addr_time bound to: 16'b0000000100010000 
+	Parameter v_sync_time bound to: 16'b0000000000001010 
+	Parameter v_back_porch bound to: 16'b0000000000000010 
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/vga_ctrl.v:16]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/vga_ctrl.v:17]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/vga_ctrl.v:32]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/vga_ctrl.v:33]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/vga_ctrl.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'vga_ctrl' (19#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/vga_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rgbtogray' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/rgbtogray.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'rgbtogray' (20#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/rgbtogray.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mean_filter' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/mean_filter.v:1]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'shift_register_2taps' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/shift_register_2taps.v:1]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'shift_reg_ram' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/shift_reg_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'shift_reg_ram' (21#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/shift_reg_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'shift_register_2taps' (22#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/shift_register_2taps.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mean_filter' (23#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/mean_filter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'matrix_add' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/matrix_add.v:1]
+	Parameter col_max bound to: 11'b00111100000 
+	Parameter row_max bound to: 11'b00100010000 
+INFO: [Synth 8-6157] synthesizing module 'fifo_8xcol' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/fifo_8xcol_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_8xcol' (24#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/fifo_8xcol_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sig_delay' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sig_delay.v:4]
+	Parameter DWIDTH bound to: 3 - type: integer 
+	Parameter DLEN bound to: 1602 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sig_delay' (25#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sig_delay.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'matrix_add' (26#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/matrix_add.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sobel_ctrl' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sobel_ctrl.v:1]
+	Parameter col_max bound to: 11'b00111100000 
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sobel_ctrl.v:17]
+INFO: [Synth 8-6157] synthesizing module 'vio_thresh' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/vio_thresh_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_thresh' (27#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/vio_thresh_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'shift_ram_sobel' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/shift_ram_sobel_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'shift_ram_sobel' (28#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/shift_ram_sobel_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_thresh_inst'. This will prevent further optimization [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sobel_ctrl.v:46]
+WARNING: [Synth 8-6014] Unused sequential element gx_valid_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sobel_ctrl.v:116]
+WARNING: [Synth 8-6014] Unused sequential element gx_abs_valid_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sobel_ctrl.v:150]
+WARNING: [Synth 8-6014] Unused sequential element gxy_valid_reg was removed.  [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sobel_ctrl.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_ctrl' (29#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sobel_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'move_detect' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/move_detect.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Video_Image_Processor' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/Video_Image_Processor.v:32]
+INFO: [Synth 8-6157] synthesizing module 'VIP_RGB888_YCbCr444' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/VIP_RGB888_YCbCr444.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'VIP_RGB888_YCbCr444' (30#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/VIP_RGB888_YCbCr444.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'Video_Image_Processor' (31#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/Video_Image_Processor.v:32]
+INFO: [Synth 8-6157] synthesizing module 'frame_difference' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/frame_difference.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_d' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/data_d.v:23]
+	Parameter delay bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fifo_delay' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/fifo_delay_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_delay' (32#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/fifo_delay_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_d' (33#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/data_d.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ram_buf' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/ram_buf_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram_buf' (34#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/ram_buf_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'frame_difference' (35#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/frame_difference.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VIP_Bit_Erosion_Detector' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/VIP_Bit_Erosion_Detector.v:34]
+	Parameter IMG_HDISP bound to: 10'b0111100000 
+	Parameter IMG_VDISP bound to: 10'b0100010000 
+INFO: [Synth 8-6157] synthesizing module 'VIP_Matrix_Generate_3X3_1Bit' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/VIP_Matrix_Generate_3X3_1Bit.v:23]
+	Parameter IMG_HDISP bound to: 10'b0111100000 
+	Parameter IMG_VDISP bound to: 10'b0100010000 
+INFO: [Synth 8-6157] synthesizing module 'Line_shift_ram_1bit' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/Line_shift_ram_1bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Line_shift_ram_1bit' (36#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/Line_shift_ram_1bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'VIP_Matrix_Generate_3X3_1Bit' (37#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/VIP_Matrix_Generate_3X3_1Bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VIP_Bit_Erosion_Detector' (38#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/VIP_Bit_Erosion_Detector.v:34]
+INFO: [Synth 8-6157] synthesizing module 'position' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/position.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'position' (39#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/position.v:24]
+INFO: [Synth 8-6157] synthesizing module 'data_d__parameterized0' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/data_d.v:23]
+	Parameter delay bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'data_d__parameterized0' (39#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/data_d.v:23]
+WARNING: [Synth 8-7023] instance 'u0_data_d' of module 'data_d' has 6 connections declared, but only 5 given [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/move_detect.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'move_detect' (40#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/move_detect/move_detect.v:2]
+INFO: [Synth 8-6157] synthesizing module 'frame_speed' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/frame_speed.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signal_sys' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/signal_sys.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signal_sys' (41#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/signal_sys.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sig_pdg' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sig_pdg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'sig_pdg' (42#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sig_pdg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'frame_speed' (43#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/frame_speed.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mbs_bd' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:291]
+INFO: [Synth 8-6157] synthesizing module 'mbs_bd_axi_reg_0_0' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_axi_reg_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbs_bd_axi_reg_0_0' (44#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_axi_reg_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mbs_bd_axi_uartlite_0_0' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbs_bd_axi_uartlite_0_0' (45#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'mbs_bd_axi_uartlite_0_0' has 22 connections declared, but only 21 given [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:439]
+INFO: [Synth 8-6157] synthesizing module 'mbs_bd_mdm_1_1' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_mdm_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbs_bd_mdm_1_1' (46#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_mdm_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mbs_bd_microblaze_0_0' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbs_bd_microblaze_0_0' (47#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'mbs_bd_microblaze_0_0' has 52 connections declared, but only 51 given [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:474]
+INFO: [Synth 8-6157] synthesizing module 'mbs_bd_microblaze_0_axi_periph_0' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:623]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1KAQFUK' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1KAQFUK' (48#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_RWFGH9' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_RWFGH9' (49#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:144]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1YB8C31' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:1337]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1YB8C31' (50#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:1337]
+INFO: [Synth 8-6157] synthesizing module 'mbs_bd_xbar_0' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbs_bd_xbar_0' (51#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbs_bd_microblaze_0_axi_periph_0' (52#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:623]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_W9L2HQ' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:1103]
+INFO: [Synth 8-6157] synthesizing module 'mbs_bd_dlmb_bram_if_cntlr_1' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbs_bd_dlmb_bram_if_cntlr_1' (53#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mbs_bd_dlmb_v10_1' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_dlmb_v10_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbs_bd_dlmb_v10_1' (54#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_dlmb_v10_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mbs_bd_dlmb_v10_1' has 25 connections declared, but only 24 given [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:1249]
+INFO: [Synth 8-6157] synthesizing module 'mbs_bd_ilmb_bram_if_cntlr_1' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbs_bd_ilmb_bram_if_cntlr_1' (55#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mbs_bd_ilmb_v10_1' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_ilmb_v10_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbs_bd_ilmb_v10_1' (56#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_ilmb_v10_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mbs_bd_ilmb_v10_1' has 25 connections declared, but only 24 given [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:1295]
+INFO: [Synth 8-6157] synthesizing module 'mbs_bd_lmb_bram_1' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_lmb_bram_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbs_bd_lmb_bram_1' (57#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_lmb_bram_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mbs_bd_lmb_bram_1' has 16 connections declared, but only 14 given [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:1320]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_W9L2HQ' (58#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:1103]
+INFO: [Synth 8-6157] synthesizing module 'mbs_bd_rst_Clk_100M_0' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_rst_Clk_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbs_bd_rst_Clk_100M_0' (59#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/realtime/mbs_bd_rst_Clk_100M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_Clk_100M' of module 'mbs_bd_rst_Clk_100M_0' has 10 connections declared, but only 8 given [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:612]
+INFO: [Synth 8-6155] done synthesizing module 'mbs_bd' (60#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/synth/mbs_bd.v:291]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_move_inst'. This will prevent further optimization [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/top.v:206]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'move_detect_inst'. This will prevent further optimization [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/top.v:670]
+WARNING: [Synth 8-3848] Net wfifo_full in module/entity top does not have driver. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/top.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'top' (61#1) [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/top.v:1]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1YB8C31 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1YB8C31 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1YB8C31 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1YB8C31 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_RWFGH9 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_RWFGH9 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_RWFGH9 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_RWFGH9 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1KAQFUK has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1KAQFUK has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1KAQFUK has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1KAQFUK has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port awid[3]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port awid[2]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port awid[1]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port awid[0]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port bid[3]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port bid[2]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port bid[1]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port bid[0]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port bresp[1]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port bresp[0]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[15]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[14]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[13]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[12]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[11]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[10]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[9]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[8]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[7]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[6]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[5]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[4]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[3]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[2]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port slast
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port rid[3]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port rid[2]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port rid[1]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port rid[0]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[15]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[14]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[13]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[12]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[11]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[10]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[9]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[8]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[7]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[6]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[5]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[4]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[3]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[2]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[1]
+WARNING: [Synth 8-3331] design xdma_v1 has unconnected port rresp[1]
+WARNING: [Synth 8-3331] design xdma_v1 has unconnected port rresp[0]
+WARNING: [Synth 8-3331] design data_ctrl has unconnected port rd_trig
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1164.957 ; gain = 375.043
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1164.957 ; gain = 375.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1164.957 ; gain = 375.043
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1164.957 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_microblaze_0_0/mbs_bd_microblaze_0_0/mbs_bd_microblaze_0_0_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_microblaze_0_0/mbs_bd_microblaze_0_0/mbs_bd_microblaze_0_0_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_rst_Clk_100M_0/mbs_bd_rst_Clk_100M_0/mbs_bd_rst_Clk_100M_0_in_context.xdc] for cell 'mbs_bd_inst/rst_Clk_100M'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_rst_Clk_100M_0/mbs_bd_rst_Clk_100M_0/mbs_bd_rst_Clk_100M_0_in_context.xdc] for cell 'mbs_bd_inst/rst_Clk_100M'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_axi_uartlite_0_0/mbs_bd_axi_uartlite_0_0/mbs_bd_axi_uartlite_0_0_in_context.xdc] for cell 'mbs_bd_inst/axi_uartlite_0'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_axi_uartlite_0_0/mbs_bd_axi_uartlite_0_0/mbs_bd_axi_uartlite_0_0_in_context.xdc] for cell 'mbs_bd_inst/axi_uartlite_0'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_axi_reg_0_0/mbs_bd_axi_reg_0_0/mbs_bd_axi_reg_0_0_in_context.xdc] for cell 'mbs_bd_inst/axi_reg_0'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_axi_reg_0_0/mbs_bd_axi_reg_0_0/mbs_bd_axi_reg_0_0_in_context.xdc] for cell 'mbs_bd_inst/axi_reg_0'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_xbar_0/mbs_bd_xbar_0/mbs_bd_xbar_0_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_xbar_0/mbs_bd_xbar_0/mbs_bd_xbar_0_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0_axi_periph/xbar'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_dlmb_v10_1/mbs_bd_dlmb_v10_1/mbs_bd_dlmb_v10_0_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_dlmb_v10_1/mbs_bd_dlmb_v10_1/mbs_bd_dlmb_v10_0_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_ilmb_v10_1/mbs_bd_ilmb_v10_1/mbs_bd_dlmb_v10_0_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_ilmb_v10_1/mbs_bd_ilmb_v10_1/mbs_bd_dlmb_v10_0_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_dlmb_bram_if_cntlr_1/mbs_bd_dlmb_bram_if_cntlr_1/mbs_bd_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_dlmb_bram_if_cntlr_1/mbs_bd_dlmb_bram_if_cntlr_1/mbs_bd_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_ilmb_bram_if_cntlr_1/mbs_bd_ilmb_bram_if_cntlr_1/mbs_bd_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_ilmb_bram_if_cntlr_1/mbs_bd_ilmb_bram_if_cntlr_1/mbs_bd_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_lmb_bram_1/mbs_bd_lmb_bram_1/mbs_bd_lmb_bram_1_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_lmb_bram_1/mbs_bd_lmb_bram_1/mbs_bd_lmb_bram_1_in_context.xdc] for cell 'mbs_bd_inst/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_mdm_1_1/mbs_bd_mdm_1_1/mbs_bd_mdm_1_0_in_context.xdc] for cell 'mbs_bd_inst/mdm_1'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/bd/mbs_bd/ip/mbs_bd_mdm_1_1/mbs_bd_mdm_1_1/mbs_bd_mdm_1_0_in_context.xdc] for cell 'mbs_bd_inst/mdm_1'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/clock_manage/clock_manage/clock_manage_in_context.xdc] for cell 'clock_manage_inst'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/clock_manage/clock_manage/clock_manage_in_context.xdc] for cell 'clock_manage_inst'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/camrea_data_fifo/camrea_data_fifo/camrea_data_fifo_in_context.xdc] for cell 'data_ctrl_inst/camrea_data_fifo_inst'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/camrea_data_fifo/camrea_data_fifo/camrea_data_fifo_in_context.xdc] for cell 'data_ctrl_inst/camrea_data_fifo_inst'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/fifo_64x1024_cnt/fifo_64x1024_cnt/fifo_64x1024_cnt_in_context.xdc] for cell 'data_ctrl_inst/fifo_64x1024_cnt_inst'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/fifo_64x1024_cnt/fifo_64x1024_cnt/fifo_64x1024_cnt_in_context.xdc] for cell 'data_ctrl_inst/fifo_64x1024_cnt_inst'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/fifo_8xcol/fifo_8xcol/fifo_8xcol_in_context.xdc] for cell 'matrix_add_inst/fifo_8xcol_0'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/fifo_8xcol/fifo_8xcol/fifo_8xcol_in_context.xdc] for cell 'matrix_add_inst/fifo_8xcol_0'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/fifo_8xcol/fifo_8xcol/fifo_8xcol_in_context.xdc] for cell 'matrix_add_inst/fifo_8xcol_1'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/fifo_8xcol/fifo_8xcol/fifo_8xcol_in_context.xdc] for cell 'matrix_add_inst/fifo_8xcol_1'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/shift_ram_sobel/shift_ram_sobel/shift_ram_sobel_in_context.xdc] for cell 'sobel_ctrl_inst/shift_ram_sobel_inst'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/shift_ram_sobel/shift_ram_sobel/shift_ram_sobel_in_context.xdc] for cell 'sobel_ctrl_inst/shift_ram_sobel_inst'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/shift_reg_ram/shift_reg_ram/shift_reg_ram_in_context.xdc] for cell 'mean_filter_inst/shift_register_2taps/shift_reg_ram_inst1'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/shift_reg_ram/shift_reg_ram/shift_reg_ram_in_context.xdc] for cell 'mean_filter_inst/shift_register_2taps/shift_reg_ram_inst1'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/shift_reg_ram/shift_reg_ram/shift_reg_ram_in_context.xdc] for cell 'mean_filter_inst/shift_register_2taps/shift_reg_ram_inst2'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/shift_reg_ram/shift_reg_ram/shift_reg_ram_in_context.xdc] for cell 'mean_filter_inst/shift_register_2taps/shift_reg_ram_inst2'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/vio_thresh/vio_thresh/vio_thresh_in_context.xdc] for cell 'sobel_ctrl_inst/vio_thresh_inst'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/vio_thresh/vio_thresh/vio_thresh_in_context.xdc] for cell 'sobel_ctrl_inst/vio_thresh_inst'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/xdma_cmd_ram/xdma_cmd_ram/xdma_cmd_ram_in_context.xdc] for cell 'xdma_v1_inst/rd_time_ctrl_inst/xdma_cmd_ram_inst'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/xdma_cmd_ram/xdma_cmd_ram/xdma_cmd_ram_in_context.xdc] for cell 'xdma_v1_inst/rd_time_ctrl_inst/xdma_cmd_ram_inst'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/xdma_cmd_ram/xdma_cmd_ram/xdma_cmd_ram_in_context.xdc] for cell 'xdma_v1_inst/wr_time_ctrl_inst/xdma_cmd_ram_inst'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/xdma_cmd_ram/xdma_cmd_ram/xdma_cmd_ram_in_context.xdc] for cell 'xdma_v1_inst/wr_time_ctrl_inst/xdma_cmd_ram_inst'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc] for cell 'ddr3_top_inst/u_mig_7series_axi_inst'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc] for cell 'ddr3_top_inst/u_mig_7series_axi_inst'
+Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/Line_shift_ram_1bit/Line_shift_ram_1bit/Line_shift_ram_1bit_in_context.xdc] for cell 'move_detect_inst/u0_VIP_Bit_Erosion_Detector/u0_VIP_Matrix_Generate_3X3_1Bit/u0_Line_shift_ram_1bit'
+Finished Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/Line_shift_ram_1bit/Line_shift_ram_1bit/Line_shift_ram_1bit_in_context.xdc] for cell 'move_detect_inst/u0_VIP_Bit_Erosion_Detector/u0_VIP_Matrix_Generate_3X3_1Bit/u0_Line_shift_ram_1bit'
+Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/Line_shift_ram_1bit/Line_shift_ram_1bit/Line_shift_ram_1bit_in_context.xdc] for cell 'move_detect_inst/u0_VIP_Bit_Erosion_Detector/u0_VIP_Matrix_Generate_3X3_1Bit/u1_Line_shift_ram_1bit'
+Finished Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/Line_shift_ram_1bit/Line_shift_ram_1bit/Line_shift_ram_1bit_in_context.xdc] for cell 'move_detect_inst/u0_VIP_Bit_Erosion_Detector/u0_VIP_Matrix_Generate_3X3_1Bit/u1_Line_shift_ram_1bit'
+Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/fifo_delay/fifo_delay/fifo_delay_in_context.xdc] for cell 'move_detect_inst/u0_frame_difference/data_d_0/u0_fifo_delay'
+Finished Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/fifo_delay/fifo_delay/fifo_delay_in_context.xdc] for cell 'move_detect_inst/u0_frame_difference/data_d_0/u0_fifo_delay'
+Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/fifo_delay/fifo_delay/fifo_delay_in_context.xdc] for cell 'move_detect_inst/u0_data_d/u0_fifo_delay'
+Finished Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/fifo_delay/fifo_delay/fifo_delay_in_context.xdc] for cell 'move_detect_inst/u0_data_d/u0_fifo_delay'
+Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/ram_buf/ram_buf/ram_buf_in_context.xdc] for cell 'move_detect_inst/u0_frame_difference/ram_buf_0'
+Finished Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/.Xil/Vivado-10748-DESKTOP-MUNN8T1/ram_buf/ram_buf/ram_buf_in_context.xdc] for cell 'move_detect_inst/u0_frame_difference/ram_buf_0'
+Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/vio_move/vio_move/vio_move_in_context.xdc] for cell 'vio_move_inst'
+Finished Parsing XDC File [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/vio_move/vio_move/vio_move_in_context.xdc] for cell 'vio_move_inst'
+Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'sys_clk' completely overrides clock 'clk_in'.
+New: create_clock -period 20.000 -name sys_clk [get_ports clk_in], [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:109]
+Previous: create_clock -period 20.000 [get_ports clk_in], [d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/clock_manage/clock_manage/clock_manage_in_context.xdc:1]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+WARNING: [Vivado 12-508] No pins matched 'clock_manage_inst/inst/mmcm_adv_inst/CLKOUT0'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:112]
+WARNING: [Vivado 12-508] No pins matched 'clock_manage_inst/inst/mmcm_adv_inst/CLKOUT1'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:113]
+WARNING: [Vivado 12-508] No pins matched 'clock_manage_inst/inst/mmcm_adv_inst/CLKOUT2'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:114]
+WARNING: [Vivado 12-508] No pins matched 'clock_manage_inst/inst/mmcm_adv_inst/CLKOUT3'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:115]
+WARNING: [Vivado 12-508] No pins matched 'ddr3_top_inst/u_mig_7series_axi_inst/u_mig_7series_axi_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:117]
+WARNING: [Vivado 12-627] No clocks matched 'ddr_clk'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:119]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:119]
+WARNING: [Vivado 12-627] No clocks matched 'ddr_clk'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:120]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:120]
+WARNING: [Vivado 12-627] No clocks matched 'ddr_clk'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:122]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:122]
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_25'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:122]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:122]
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_25'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:123]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:123]
+WARNING: [Vivado 12-627] No clocks matched 'ddr_clk'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:123]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:123]
+WARNING: [Vivado 12-627] No clocks matched 'ddr_clk'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:125]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:125]
+WARNING: [Vivado 12-627] No clocks matched 'ddr_ref_clk'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:125]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:125]
+WARNING: [Vivado 12-627] No clocks matched 'ddr_ref_clk'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:126]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:126]
+WARNING: [Vivado 12-627] No clocks matched 'ddr_clk'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:126]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:126]
+WARNING: [Vivado 12-627] No clocks matched 'ddr_clk'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:128]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:128]
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_9'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:128]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:128]
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_9'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:129]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:129]
+WARNING: [Vivado 12-627] No clocks matched 'ddr_clk'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:129]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:129]
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_100'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:131]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:131]
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_100'. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:132]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc:132]
+Finished Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1289.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1289.738 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mbs_bd_inst/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'xdma_v1_inst/rd_time_ctrl_inst/xdma_cmd_ram_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'xdma_v1_inst/wr_time_ctrl_inst/xdma_cmd_ram_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/clock_manage/clock_manage/clock_manage_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/clock_manage/clock_manage/clock_manage_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_n. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_n. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_p. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_p. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cke. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cke. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cs_n. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cs_n. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_odt. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_odt. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  d:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/ip/mig_7series_axi/mig_7series_axi/mig_7series_axi_in_context.xdc, line 97).
+Applied set_property DONT_TOUCH = true for mbs_bd_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbs_bd_inst/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbs_bd_inst/rst_Clk_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbs_bd_inst/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbs_bd_inst/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbs_bd_inst/axi_reg_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbs_bd_inst/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbs_bd_inst/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbs_bd_inst/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbs_bd_inst/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbs_bd_inst/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbs_bd_inst/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbs_bd_inst/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clock_manage_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for data_ctrl_inst/camrea_data_fifo_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for data_ctrl_inst/fifo_64x1024_cnt_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for matrix_add_inst/fifo_8xcol_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for matrix_add_inst/fifo_8xcol_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for sobel_ctrl_inst/shift_ram_sobel_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mean_filter_inst/shift_register_2taps/shift_reg_ram_inst1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mean_filter_inst/shift_register_2taps/shift_reg_ram_inst2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for sobel_ctrl_inst/vio_thresh_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xdma_v1_inst/rd_time_ctrl_inst/xdma_cmd_ram_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xdma_v1_inst/wr_time_ctrl_inst/xdma_cmd_ram_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ddr3_top_inst/u_mig_7series_axi_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for move_detect_inst/u0_VIP_Bit_Erosion_Detector/u0_VIP_Matrix_Generate_3X3_1Bit/u0_Line_shift_ram_1bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for move_detect_inst/u0_VIP_Bit_Erosion_Detector/u0_VIP_Matrix_Generate_3X3_1Bit/u1_Line_shift_ram_1bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for move_detect_inst/u0_frame_difference/data_d_0/u0_fifo_delay. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for move_detect_inst/u0_data_d/u0_fifo_delay. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for move_detect_inst/u0_frame_difference/ram_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vio_move_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  S_IDLE |                             0001 |                             0001
+                  S_WAIT |                             0010 |                             0010
+                  S_WACK |                             0100 |                             0100
+                S_WR_DDR |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_state_reg' in module 'cmd_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              S_DDR_IDLE |                             0001 |                             0001
+             S_WAIT_TRIG |                             0010 |                             0010
+                S_RD_ACK |                             1000 |                             1000
+                S_RD_DDR |                             0100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'r_ddr_state_reg' in module 'cmd_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'axi_master_rd'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'axi_master_rd'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'axi_master_wr'
+INFO: [Synth 8-802] inferred FSM for state register 'bstate_reg' in module 'axi_master_wr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              001 |                              001
+                   TRANS |                              010 |                              010
+                    DONE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'mstate_reg' in module 'axi_master_rd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                   RIDLE |                              001 |                              001
+                   RADDR |                              010 |                              010
+                   RDATA |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'rstate_reg' in module 'axi_master_rd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                   BIDLE |                             0001 |                             0001
+                  AWADDR |                             0010 |                             0010
+                   WDATA |                             0100 |                             0100
+                   WRESP |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'bstate_reg' in module 'axi_master_wr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              001 |                              001
+                   TRANS |                              010 |                              010
+                    DONE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'mstate_reg' in module 'axi_master_wr'
+WARNING: [Synth 8-327] inferring latch for variable 'a11_reg' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sobel_ctrl.v:230]
+WARNING: [Synth 8-327] inferring latch for variable 'a31_reg' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sobel_ctrl.v:232]
+WARNING: [Synth 8-327] inferring latch for variable 'a21_reg' [D:/wx_prj/hdmi_movie_clean/hdmi_movie.srcs/sources_1/new/sobel_ctrl.v:231]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 2     
+	   2 Input     25 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 2     
+	   4 Input     16 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 5     
+	   8 Input     11 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 6     
+	   9 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 8     
+	   2 Input      2 Bit       Adders := 5     
++---Registers : 
+	               64 Bit    Registers := 4     
+	               32 Bit    Registers := 23    
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 21    
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 21    
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 24    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1613  
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 119   
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 17    
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input     11 Bit        Muxes := 11    
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 20    
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 14    
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 10    
+	   4 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 80    
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module power_on_delay 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module ov5640_iic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module ov5640_cfg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module ov5640_data 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module uart_data_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module data_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module cmd_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 5     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_master_rd 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+Module wr_time_ctrl__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 1     
+Module axi_master_wr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+Module wr_time_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 1     
+Module vga_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module rgbtogray 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+Module mean_filter 
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 1     
+Module sig_delay 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1602  
+Module matrix_add 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module sobel_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   9 Input     11 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 5     
+	                8 Bit    Registers := 6     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+Module VIP_RGB888_YCbCr444 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   4 Input     16 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 12    
+	                8 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+Module data_d 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+Module frame_difference 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module VIP_Matrix_Generate_3X3_1Bit 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module VIP_Bit_Erosion_Detector 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
+Module position 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module data_d__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+Module move_detect 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module signal_sys 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module sig_pdg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module frame_speed 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design mbs_bd_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design mbs_bd_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design mbs_bd_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design mbs_bd_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design mbs_bd_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design mbs_bd_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port awid[3]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port awid[2]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port awid[1]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port awid[0]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port bid[3]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port bid[2]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port bid[1]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port bid[0]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port bresp[1]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port bresp[0]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[15]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[14]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[13]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[12]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[11]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[10]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[9]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[8]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[7]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[6]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[5]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[4]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[3]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port mode[2]
+WARNING: [Synth 8-3331] design axi_master_wr has unconnected port slast
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port rid[3]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port rid[2]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port rid[1]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port rid[0]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[15]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[14]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[13]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[12]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[11]
+WARNING: [Synth 8-3331] design axi_master_rd has unconnected port mode[10]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_green_r0_reg[0]' (FDC) to 'move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_red_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_blue_r0_reg[13]' (FDC) to 'move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_red_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_blue_r0_reg[14]' (FDC) to 'move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_red_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_red_r0_reg[15]' (FDC) to 'move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (move_detect_inst/\u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/img_blue_r0_reg[15] )
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_data_d/wr_en_r_reg[0]' (FDC) to 'move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/per_frame_clken_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_data_d/wr_en_r_reg[1]' (FDC) to 'move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/per_frame_clken_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_data_d/wr_en_r_reg[2]' (FDC) to 'move_detect_inst/u0_Video_Image_Processor/u0_VIP_RGB888_YCbCr444/per_frame_clken_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_data_d/wr_en_r_reg[3]' (FDC) to 'move_detect_inst/u0_frame_difference/data_d_0/wr_en_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_data_d/wr_en_r_reg[4]' (FDC) to 'move_detect_inst/u0_frame_difference/data_d_0/wr_en_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_data_d/wr_en_r_reg[5]' (FDC) to 'move_detect_inst/u0_frame_difference/data_d_0/wr_en_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_data_d/wr_en_r_reg[6]' (FDC) to 'move_detect_inst/u0_frame_difference/data_d_0/wr_en_r_reg[3]'
+INFO: [Synth 8-3886] merging instance 'xdma_v1_inst/rd_time_ctrl_inst/cmd_num_reg[1]' (FDCE) to 'xdma_v1_inst/rd_time_ctrl_inst/cmd_num_reg[5]'
+INFO: [Synth 8-3886] merging instance 'xdma_v1_inst/rd_time_ctrl_inst/cmd_num_reg[2]' (FDCE) to 'xdma_v1_inst/rd_time_ctrl_inst/cmd_num_reg[5]'
+INFO: [Synth 8-3886] merging instance 'xdma_v1_inst/rd_time_ctrl_inst/cmd_num_reg[3]' (FDCE) to 'xdma_v1_inst/rd_time_ctrl_inst/cmd_num_reg[5]'
+INFO: [Synth 8-3886] merging instance 'xdma_v1_inst/rd_time_ctrl_inst/cmd_num_reg[4]' (FDCE) to 'xdma_v1_inst/rd_time_ctrl_inst/cmd_num_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xdma_v1_inst/\rd_time_ctrl_inst/cmd_num_reg[5] )
+INFO: [Synth 8-3886] merging instance 'xdma_v1_inst/wr_time_ctrl_inst/cmd_num_reg[1]' (FDCE) to 'xdma_v1_inst/wr_time_ctrl_inst/cmd_num_reg[5]'
+INFO: [Synth 8-3886] merging instance 'xdma_v1_inst/wr_time_ctrl_inst/cmd_num_reg[2]' (FDCE) to 'xdma_v1_inst/wr_time_ctrl_inst/cmd_num_reg[5]'
+INFO: [Synth 8-3886] merging instance 'xdma_v1_inst/wr_time_ctrl_inst/cmd_num_reg[3]' (FDCE) to 'xdma_v1_inst/wr_time_ctrl_inst/cmd_num_reg[5]'
+INFO: [Synth 8-3886] merging instance 'xdma_v1_inst/wr_time_ctrl_inst/cmd_num_reg[4]' (FDCE) to 'xdma_v1_inst/wr_time_ctrl_inst/cmd_num_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xdma_v1_inst/\wr_time_ctrl_inst/cmd_num_reg[5] )
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_data_d/wr_en_r_reg[7]' (FDC) to 'move_detect_inst/u0_frame_difference/data_d_0/wr_en_r_reg[4]'
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_data_d/wr_en_r_reg[8]' (FDC) to 'move_detect_inst/u0_frame_difference/data_d_0/wr_en_r_reg[5]'
+INFO: [Synth 8-3886] merging instance 'move_detect_inst/u0_frame_difference/data_d_0/wr_en_r_reg[6]' (FDC) to 'move_detect_inst/u0_data_d/wr_en_r_reg[9]'
+INFO: [Synth 8-3886] merging instance 'rgbtogray_inst/rgb_g_mul_reg[0]' (FDC) to 'rgbtogray_inst/rgb_r_mul_reg[15]'
+INFO: [Synth 8-3886] merging instance 'rgbtogray_inst/rgb_b_mul_reg[13]' (FDC) to 'rgbtogray_inst/rgb_r_mul_reg[15]'
+INFO: [Synth 8-3886] merging instance 'rgbtogray_inst/rgb_b_mul_reg[14]' (FDC) to 'rgbtogray_inst/rgb_r_mul_reg[15]'
+INFO: [Synth 8-3886] merging instance 'rgbtogray_inst/rgb_r_mul_reg[15]' (FDC) to 'rgbtogray_inst/rgb_b_mul_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rgbtogray_inst/\rgb_b_mul_reg[15] )
+INFO: [Synth 8-3886] merging instance 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[14]' (FDCE) to 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[23]'
+INFO: [Synth 8-3886] merging instance 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[23]' (FDCE) to 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[24]'
+INFO: [Synth 8-3886] merging instance 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[25]' (FDCE) to 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[24]'
+INFO: [Synth 8-3886] merging instance 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[26]' (FDCE) to 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[24]'
+INFO: [Synth 8-3886] merging instance 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[29]' (FDCE) to 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[27]'
+INFO: [Synth 8-3886] merging instance 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[30]' (FDCE) to 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[27]'
+INFO: [Synth 8-3886] merging instance 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[27]' (FDCE) to 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[28]'
+INFO: [Synth 8-3886] merging instance 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[31]' (FDCE) to 'ov5640_cfg_inst/ov5640_iic_inst/wsda_reg_reg[24]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ov5640_cfg_inst/\ov5640_iic_inst/wsda_reg_reg[24] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:23 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:29 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:30 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'vga_ctrl_inst/vga_vsync_d_reg' (FDC) to 'rgbtogray_inst/rgb_vsync_delay_reg[0]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:32 ; elapsed = 00:01:33 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin xdma_v1_inst/cmd_ctrl_inst/cmd_fifo_full_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin xdma_v1_inst/cmd_ctrl_inst/cmd_fifo_empty_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:35 ; elapsed = 00:01:36 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:35 ; elapsed = 00:01:36 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:36 ; elapsed = 00:01:37 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | matrix_add_inst/sig_matrix_delay/r_d_reg[1601][2]    | 1602   | 3     | YES          | NO                 | YES               | 0      | 150     | 
+|move_detect | u0_VIP_Bit_Erosion_Detector/per_frame_vsync_r_reg[1] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|move_detect | post_frame_vsync_r_reg[10]                           | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|move_detect | post_frame_href_r_reg[10]                            | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|move_detect | u0_frame_difference/data_d_0/wr_en_r_reg[5]          | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |Line_shift_ram_1bit         |         2|
+|2     |fifo_delay                  |         2|
+|3     |ram_buf                     |         1|
+|4     |mbs_bd_xbar_0               |         1|
+|5     |mbs_bd_axi_reg_0_0          |         1|
+|6     |mbs_bd_axi_uartlite_0_0     |         1|
+|7     |mbs_bd_mdm_1_1              |         1|
+|8     |mbs_bd_microblaze_0_0       |         1|
+|9     |mbs_bd_rst_Clk_100M_0       |         1|
+|10    |mbs_bd_dlmb_bram_if_cntlr_1 |         1|
+|11    |mbs_bd_dlmb_v10_1           |         1|
+|12    |mbs_bd_ilmb_bram_if_cntlr_1 |         1|
+|13    |mbs_bd_ilmb_v10_1           |         1|
+|14    |mbs_bd_lmb_bram_1           |         1|
+|15    |vio_move                    |         1|
+|16    |clock_manage                |         1|
+|17    |camrea_data_fifo            |         1|
+|18    |fifo_64x1024_cnt            |         1|
+|19    |mig_7series_axi             |         1|
+|20    |fifo_8xcol                  |         2|
+|21    |shift_reg_ram               |         2|
+|22    |vio_thresh                  |         1|
+|23    |shift_ram_sobel             |         1|
+|24    |xdma_cmd_ram                |         2|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |Line_shift_ram_1bit         |     1|
+|2     |Line_shift_ram_1bit__2      |     1|
+|3     |camrea_data_fifo            |     1|
+|4     |clock_manage                |     1|
+|5     |fifo_64x1024_cnt            |     1|
+|6     |fifo_8xcol                  |     1|
+|7     |fifo_8xcol__2               |     1|
+|8     |fifo_delay                  |     1|
+|9     |fifo_delay__2               |     1|
+|10    |mbs_bd_axi_reg_0_0          |     1|
+|11    |mbs_bd_axi_uartlite_0_0     |     1|
+|12    |mbs_bd_dlmb_bram_if_cntlr_1 |     1|
+|13    |mbs_bd_dlmb_v10_1           |     1|
+|14    |mbs_bd_ilmb_bram_if_cntlr_1 |     1|
+|15    |mbs_bd_ilmb_v10_1           |     1|
+|16    |mbs_bd_lmb_bram_1           |     1|
+|17    |mbs_bd_mdm_1_1              |     1|
+|18    |mbs_bd_microblaze_0_0       |     1|
+|19    |mbs_bd_rst_Clk_100M_0       |     1|
+|20    |mbs_bd_xbar_0               |     1|
+|21    |mig_7series_axi             |     1|
+|22    |ram_buf                     |     1|
+|23    |shift_ram_sobel             |     1|
+|24    |shift_reg_ram               |     1|
+|25    |shift_reg_ram__2            |     1|
+|26    |vio_move                    |     1|
+|27    |vio_thresh                  |     1|
+|28    |xdma_cmd_ram                |     1|
+|29    |xdma_cmd_ram__2             |     1|
+|30    |BUFG                        |     3|
+|31    |CARRY4                      |   337|
+|32    |LUT1                        |    37|
+|33    |LUT2                        |   359|
+|34    |LUT3                        |   667|
+|35    |LUT4                        |   627|
+|36    |LUT5                        |   213|
+|37    |LUT6                        |   573|
+|38    |MUXF7                       |    28|
+|39    |MUXF8                       |     1|
+|40    |SRL16E                      |     4|
+|41    |SRLC32E                     |   150|
+|42    |FDCE                        |  1905|
+|43    |FDPE                        |    18|
+|44    |FDRE                        |  1737|
+|45    |LDC                         |    24|
+|46    |IBUF                        |    13|
+|47    |OBUF                        |    35|
+|48    |OBUFT                       |     1|
++------+----------------------------+------+
+
+Report Instance Areas: 
++------+--------------------------------------+-------------------------------------+------+
+|      |Instance                              |Module                               |Cells |
++------+--------------------------------------+-------------------------------------+------+
+|1     |top                                   |                                     |  8460|
+|2     |  move_detect_inst                    |move_detect                          |   831|
+|3     |    u0_VIP_Bit_Erosion_Detector       |VIP_Bit_Erosion_Detector             |    77|
+|4     |      u0_VIP_Matrix_Generate_3X3_1Bit |VIP_Matrix_Generate_3X3_1Bit         |    26|
+|5     |    u0_Video_Image_Processor          |Video_Image_Processor                |   207|
+|6     |      u0_VIP_RGB888_YCbCr444          |VIP_RGB888_YCbCr444                  |   207|
+|7     |    u0_data_d                         |data_d__parameterized0               |    27|
+|8     |    u0_frame_difference               |frame_difference                     |   144|
+|9     |      data_d_0                        |data_d                               |    32|
+|10    |    u0_position                       |position                             |   288|
+|11    |  mbs_bd_inst                         |mbs_bd                               |  1116|
+|12    |    microblaze_0_axi_periph           |mbs_bd_microblaze_0_axi_periph_0     |   263|
+|13    |    microblaze_0_local_memory         |microblaze_0_local_memory_imp_W9L2HQ |   496|
+|14    |  data_ctrl_inst                      |data_ctrl                            |   137|
+|15    |  ddr3_top_inst                       |ddr3_top                             |   135|
+|16    |  frame_speed_inst                    |frame_speed                          |   170|
+|17    |    sig_pdg_inst                      |sig_pdg                              |     3|
+|18    |    signal_sys_inst                   |signal_sys                           |     6|
+|19    |  matrix_add_inst                     |matrix_add                           |  1842|
+|20    |    sig_matrix_delay                  |sig_delay                            |  1760|
+|21    |  mean_filter_inst                    |mean_filter                          |   179|
+|22    |    shift_register_2taps              |shift_register_2taps                 |    16|
+|23    |  ov5640_cfg_inst                     |ov5640_cfg                           |   268|
+|24    |    ov5640_iic_inst                   |ov5640_iic                           |   215|
+|25    |  ov5640_data_inst                    |ov5640_data                          |   234|
+|26    |  power_on_delay_inst                 |power_on_delay                       |    90|
+|27    |  rgbtogray_inst                      |rgbtogray                            |   267|
+|28    |  sobel_ctrl_inst                     |sobel_ctrl                           |   354|
+|29    |  uart_data_gen_inst                  |uart_data_gen                        |    70|
+|30    |  vga_ctrl_inst                       |vga_ctrl                             |   341|
+|31    |  xdma_v1_inst                        |xdma_v1                              |  2181|
+|32    |    axi_rd                            |axi_master_rd                        |   166|
+|33    |    axi_wr                            |axi_master_wr                        |   194|
+|34    |    cmd_ctrl_inst                     |cmd_ctrl                             |   641|
+|35    |    rd_time_ctrl_inst                 |wr_time_ctrl__xdcDup__1              |   591|
+|36    |    wr_time_ctrl_inst                 |wr_time_ctrl                         |   589|
++------+--------------------------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:36 ; elapsed = 00:01:37 . Memory (MB): peak = 1290.820 ; gain = 500.906
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 57 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:24 ; elapsed = 00:01:33 . Memory (MB): peak = 1290.820 ; gain = 375.043
+Synthesis Optimization Complete : Time (s): cpu = 00:01:36 ; elapsed = 00:01:37 . Memory (MB): peak = 1290.820 ; gain = 500.906
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1290.820 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 390 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1290.820 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  LDC => LDCE: 24 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+244 Infos, 166 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:40 ; elapsed = 00:01:43 . Memory (MB): peak = 1290.820 ; gain = 771.789
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1290.820 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/wx_prj/hdmi_movie_clean/hdmi_movie.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  9 09:10:29 2022...

@@ -1,0 +1,2 @@
+shift_ram_sobel.vhd,vhdl,xil_defaultlib,../../../../hdmi_movie.srcs/sources_1/ip/shift_ram_sobel/sim/shift_ram_sobel.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

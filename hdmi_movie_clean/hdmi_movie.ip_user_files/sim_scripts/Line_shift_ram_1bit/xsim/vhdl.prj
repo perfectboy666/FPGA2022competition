@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../ip/Line_shift_ram_1bit/sim/Line_shift_ram_1bit.vhd" \
+
+nosort
